@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['']">Portfolio</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" [routerLink]="['']">About Me</a>
+        <a class="nav-link"  [routerLink]="['/skills']">Skills</a>
+        <a class="nav-link" [routerLink]="['/contact-me']">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container kc-content">
+<router-outlet></router-outlet>
+</div>
+<div class="container">
+  by Khanchai Wongsit CTF020702
+</div>
