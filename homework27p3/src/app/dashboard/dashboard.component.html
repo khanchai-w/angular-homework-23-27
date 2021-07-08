@@ -1,0 +1,1784 @@
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Dashboard</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+      <div class="btn-group me-2">
+        <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+      </div>
+      <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+        <span data-feather="calendar"></span>
+        This week
+      </button>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="container-fluid">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="card card-primary card-outline configuration-steps " id="configuration-steps-card">
+    <div class="card-header with-border">
+    <h3 class="card-title">
+    <i class="far fa-star"></i>
+    Start accepting orders
+    </h3>
+    <div class="card-tools float-right">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    <button type="button" class="btn btn-tool" data-card-widget="remove">
+    <i class="fas fa-times"></i>
+    </button>
+    </div>
+    </div>
+    <script>
+            $(document).ready(function () {
+                $('#configuration-steps-card').on('click', 'button[data-card-widget="collapse"]', function () {
+                    var collapsed = !$('#configuration-steps-card').hasClass('collapsed-card');
+                    saveUserPreferences('/Admin/Preferences/SavePreference', 'HideConfigurationSteps', collapsed);
+                });
+
+                $('#configuration-steps-card').on('click', 'button[data-card-widget="remove"]', function () {
+                    var collapsed = !$('#configuration-steps-card').hasClass('collapsed-card');
+                    saveUserPreferences('/Admin/Preferences/SavePreference', 'CloseConfigurationSteps', collapsed);
+                });
+            });
+        </script>
+    <div class="card-body">
+    <div class="row">
+    <div class="col-12">
+    <h4>
+    Welcome to your store!
+    </h4>
+    </div>
+    <p class="intro text-center">
+    Can’t wait to start accepting orders? Let us show you how to set up your store fast and easy. The steps below describe the most important settings for the online shop. With our tips on each page you will see how clear this process is. You will be ready to start selling immediately after you go through these steps. So good luck!
+    </p>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <div class="row mb-2">
+    <div class="col-4">
+    <a class="configuration-step-link theme-step" href="/Admin/Setting/GeneralCommon?showtour=True">
+    <div class="row">
+    <div class="col-12 col-xl-3">
+    <div class="configuration-step-icon">
+    <i class="fas fa-pencil-alt"></i>
+    </div>
+    </div>
+    <div class="col-12 col-xl-9">
+    <h5>
+    1. &nbsp; Personalize your store
+    <small class="text-muted">
+    Choose a beautiful theme for your store and add your logo
+    </small>
+    </h5>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class="col-4">
+    <a class="configuration-step-link store-info-step" href="/Admin/Store/Edit/1?showtour=True">
+    <div class="row">
+    <div class="col-12 col-xl-3">
+    <div class="configuration-step-icon">
+    <i class="fas fa-globe"></i>
+    </div>
+    </div>
+    <div class="col-12 col-xl-9">
+    <h5>
+    2. &nbsp; Add your store info
+    <small class="text-muted">
+    Enter your store details and protect your customers using SSL
+    </small>
+    </h5>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class="col-4">
+    <a class="configuration-step-link shipping-step" href="/Admin/Shipping/Providers?showtour=True">
+    <div class="row">
+    <div class="col-12 col-xl-3">
+    <div class="configuration-step-icon">
+    <i class="fas fa-truck"></i>
+    </div>
+    </div>
+    <div class="col-12 col-xl-9">
+    <h5>
+    3. &nbsp; Set up shipping
+    <small class="text-muted">
+    Set up shipping methods to deliver orders to customers
+    </small>
+    </h5>
+    </div>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div class="row mb-2">
+    <div class="col-4">
+    <a class="configuration-step-link payments-step" href="/Admin/Payment/Methods?showtour=True">
+    <div class="row">
+    <div class="col-12 col-xl-3">
+    <div class="configuration-step-icon">
+    <i class="far fa-credit-card"></i>
+    </div>
+    </div>
+    <div class="col-12 col-xl-9">
+    <h5>
+    4. &nbsp; Set up payments
+    <small class="text-muted">
+    Choose how your customers will pay for their orders
+    </small>
+    </h5>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class="col-4">
+    <a class="configuration-step-link taxes-step" href="/Admin/Tax/Providers?showtour=True">
+    <div class="row">
+    <div class="col-12 col-xl-3">
+    <div class="configuration-step-icon">
+    <i class="fas fa-percent"></i>
+    </div>
+    </div>
+    <div class="col-12 col-xl-9">
+    <h5>
+    5. &nbsp; Set up taxes
+    <small class="text-muted">
+    Configure rates manually or choose a tax service to automate all tax things
+    </small>
+    </h5>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class="col-4">
+    <a class="configuration-step-link products-step" href="/Admin/Product/Create?showtour=True">
+    <div class="row">
+    <div class="col-12 col-xl-3">
+    <div class="configuration-step-icon">
+    <i class="fas fa-shopping-cart "></i>
+    </div>
+    </div>
+    <div class="col-12 col-xl-9">
+    <h5>
+    6. &nbsp; Create products
+    <small class="text-muted">
+    Build a catalog with attractive product descriptions and pictures
+    </small>
+    </h5>
+    </div>
+    </div>
+    </a>
+    </div>
+    </div>
+    <div class="row mb-4">
+    <div class="col-4">
+    <a class="configuration-step-link email-step" href="/Admin/EmailAccount/List?showtour=True">
+    <div class="row">
+    <div class="col-12 col-xl-3">
+    <div class="configuration-step-icon">
+    <i class="far fa-envelope"></i>
+    </div>
+    </div>
+    <div class="col-12 col-xl-9">
+    <h5>
+    7. &nbsp; Set up email accounts
+    <small class="text-muted">
+    It allows you to send notifications to your customers
+    </small>
+    </h5>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class="col-4">
+    <a class="configuration-step-link service-step" href="/Admin/Topic/List?showtour=True">
+    <div class="row">
+    <div class="col-12 col-xl-3">
+    <div class="configuration-step-icon">
+    <i class="fas fa-info"></i>
+    </div>
+    </div>
+    <div class="col-12 col-xl-9">
+    <h5>
+    8. &nbsp; Edit services info
+    <small class="text-muted">
+    Add info pages describing shipping, return policy and more
+    </small>
+    </h5>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class="col-4">
+    <a class="configuration-step-link copyright-step" href="https://www.nopcommerce.com/nopcommerce-copyright-removal-key?utm_source=demo-admin-panel&amp;utm_medium=tour&amp;utm_campaign=powered_by_nopcommerce&amp;utm_content=dashboard" target="_blank">
+    <div class="row">
+    <div class="col-12 col-xl-3">
+    <div class="configuration-step-icon">
+    <i class="far fa-copyright"></i>
+    </div>
+    </div>
+    <div class="col-12 col-xl-9">
+    <h5>
+    9. &nbsp; “Powered by” link
+    <small class="text-muted">
+    Remove the “Powered by nopCommerce” link from the footer
+    </small>
+    </h5>
+    </div>
+    </div>
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-12">
+    <div class="card card-primary card-outline " id="nopcommerce-news-box">
+    <div class="card-header with-border clearfix">
+    <div class="card-title">
+    <i class="far fa-newspaper"></i>
+    NopCommerce News
+    </div>
+    <div class="card-tools float-right">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    </div>
+    </div>
+    <div class="card-body">
+    <div class="row">
+    <div class="col-md-4">
+    <div class="card card-info">
+    <div class="card-header clearfix">
+    <a class="float-left" href="https://www.nopcommerce.com/nopcommerce-copyright-removal-key?utm_source=demo-admin-panel&amp;utm_medium=dashboard&amp;utm_campaign=powered_by_nopcommerce">"Powered by nopCommerce" link</a>
+    </div>
+    <div class="card-body">
+    Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer? Click <a href="https://www.nopcommerce.com/nopcommerce-copyright-removal-key?utm_source=demo-admin-panel&amp;utm_medium=dashboard&amp;utm_campaign=powered_by_nopcommerce">here</a> for more info.
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="card card-info">
+    <div class="card-header clearfix">
+    <a class="float-left" href="https://www.nopcommerce.com/nopcommerce-premium-support-services?utm_source=demo-admin-panel&amp;utm_medium=dashboard&amp;utm_campaign=premium_support">Premium support services</a>
+    </div>
+    <div class="card-body">
+    Get dedicated support from the nopCommerce team with a guaranteed response within 24 hours. Click <a href="https://www.nopcommerce.com/nopcommerce-premium-support-services?utm_source=demo-admin-panel&amp;utm_medium=dashboard&amp;utm_campaign=premium_support">here</a> for more info.
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="card card-info">
+    <div class="card-header clearfix">
+    <a class="float-left" href="https://www.everleap.com/cloud-hosting/web-app/nopcommerce/hosting/?utm_source=NOPC&amp;utm_medium=TXT&amp;utm_content=PREMCP&amp;utm_campaign=MIG30DYS">Recommended hosting for your store</a>
+    </div>
+    <div class="card-body">
+    Everleap cloud hosting seamlessly scales sites with ease and they move stores for free. <a href="https://www.everleap.com/cloud-hosting/web-app/nopcommerce/hosting/?utm_source=NOPC&amp;utm_medium=TXT&amp;utm_content=PREMCP&amp;utm_campaign=MIG30DYS" target="_blank">Learn more</a> and get a 30 day free trial.
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+                $(document).ready(function () {
+                    $('#nopcommerce-news-box').on('click', 'button[data-widget="collapse"]', function () {
+                        var collapsed = !$('#nopcommerce-news-box').hasClass('collapsed-box');
+                        saveUserPreferences('/Admin/Preferences/SavePreference', 'HideNopCommerceNewsCard', collapsed);
+                    });
+                });
+                </script>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-12">
+    <div class="card card-primary card-outline " id="nopcommerce-common-statistics-card">
+    <div class="card-header with-border clearfix">
+    <div class="card-title">
+    <i class="far fa-chart-bar"></i>
+    Common statistics
+    </div>
+    <div class="card-tools float-right">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    </div>
+    </div>
+    <div class="card-body">
+    <div class="row">
+    <div class="col-lg-3 col-6">
+    <div class="small-box bg-info">
+    <div class="inner">
+    <h3>5</h3>
+    <p>Orders</p>
+    </div>
+    <div class="icon">
+    <i class="ion ion-bag"></i>
+    </div>
+    <a class="small-box-footer" href="/Admin/Order/List">
+    More info
+    <i class="fas fa-arrow-circle-right"></i>
+    </a>
+    </div>
+    </div>
+    <div class="col-lg-3 col-6">
+    <div class="small-box bg-yellow">
+    <div class="inner">
+    <h3>0</h3>
+    <p>Pending return requests</p>
+    </div>
+    <div class="icon">
+    <i class="ion ion-refresh"></i>
+    </div>
+    <a class="small-box-footer" href="/Admin/ReturnRequest/List">
+    More info
+    <i class="fas fa-arrow-circle-right"></i>
+    </a>
+    </div>
+    </div>
+    <div class="col-lg-3 col-6">
+    <div class="small-box bg-green">
+    <div class="inner">
+    <h3>6</h3>
+    <p>Registered customers</p>
+    </div>
+    <div class="icon">
+    <i class="ion ion-person-add"></i>
+    </div>
+    <a class="small-box-footer" href="/Admin/Customer/List">
+    More info
+    <i class="fas fa-arrow-circle-right"></i>
+    </a>
+    </div>
+    </div>
+    <div class="col-lg-3 col-6">
+    <div class="small-box bg-red">
+    <div class="inner">
+    <h3>1</h3>
+    <p>Low stock products</p>
+    </div>
+    <div class="icon">
+    <i class="ion ion-pie-graph"></i>
+    </div>
+    <a class="small-box-footer" href="/Admin/Report/LowStock">
+    More info
+     <i class="fas fa-arrow-circle-right"></i>
+    </a>
+    </div>
+    </div>
+    <script>
+                $(document).ready(function () {
+                    $('#nopcommerce-common-statistics-card').on('click', 'button[data-card-widget="collapse"]', function () {
+                        var collapsed = !$('#nopcommerce-common-statistics-card').hasClass('collapsed-card');
+                        saveUserPreferences('/Admin/Preferences/SavePreference', 'HideCommonStatisticsCard', collapsed);
+                    });
+                });
+                    </script>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="card card-primary card-outline " id="order-statistics-card">
+    <div class="card-header with-border">
+    <h3 class="card-title">
+    <i class="fas fa-shopping-cart"></i>
+    Orders
+    </h3>
+    <div class="card-tools float-right">
+    <button class="btn btn-xs btn-info btn-flat margin-r-5" data-chart-role="toggle-chart" data-chart-period="year">Year</button>
+    <button class="btn btn-xs btn-info btn-flat margin-r-5" data-chart-role="toggle-chart" data-chart-period="month">Month</button>
+    <button class="btn btn-xs btn-info btn-flat bg-light-blue" data-chart-role="toggle-chart" data-chart-period="week">Week</button>
+    <button type="button" class="btn btn-tool margin-l-10" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    </div>
+    </div>
+    <div class="card-body">
+    <div class="chart" style="height: 300px;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+    <canvas id="order-statistics-chart" height="300" width="358" style="display: block; width: 358px; height: 300px;" class="chartjs-render-monitor"></canvas>
+    </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var osCurrentPeriod;
+
+            $('#order-statistics-card').on('click', 'button[data-card-widget="collapse"]', function () {
+                var collapsed = !$('#order-statistics-card').hasClass('collapsed-card');
+                saveUserPreferences('/Admin/Preferences/SavePreference', 'Reports.HideOrderStatisticsCard', collapsed);
+
+                if (!collapsed) {
+                    $('#order-statistics-card button[data-chart-role="toggle-chart"]').removeAttr('disabled');
+                    if (!osCurrentPeriod) {
+                        $('#order-statistics-card button[data-chart-role="toggle-chart"][data-chart-period="week"]').trigger('click');
+                    }
+                } else {
+                    $('#order-statistics-card button[data-chart-role="toggle-chart"]').attr('disabled', 'disabled');
+                }
+            });
+
+            var osConfig = {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [
+                        {
+                            label: "Orders",
+                            fillColor: "rgba(60,141,188,0.9)",
+                            strokeColor: "rgba(60,141,188,0.8)",
+                            pointColor: "#3b8bba",
+                            pointStrokeColor: "rgba(60,141,188,1)",
+                            pointHighlightFill: "#fff",
+                            pointHighlightStroke: "rgba(60,141,188,1)",
+                            borderColor: 'rgba(60, 141, 188, 0.7)',
+                            backgroundColor: 'rgba(44, 152, 214, 0.5)',
+                            pointBorderColor: 'rgba(37, 103, 142, 0.9)',
+                            pointBackgroundColor: 'rgba(60, 141, 188, 0.4)',
+                            pointBorderWidth: 1,
+                            data: []
+                        }
+                    ]
+                },
+                options: {
+                    legend: {
+                        display: false
+                    },
+                    scales: {
+                        xAxes: [{
+                            display: true,
+                            ticks: {
+                                userCallback: function (dataLabel, index) {
+                                    if (window.orderStatistics && window.orderStatistics.config.data.labels.length > 12) {
+                                        return index % 5 === 0 ? dataLabel : '';
+                                    }
+                                    return dataLabel;
+                                }
+                            }
+                        }],
+                        yAxes: [{
+                            display: true,
+                            ticks: {
+                                userCallback: function (dataLabel, index) {
+                                    return (dataLabel ^ 0) === dataLabel ? dataLabel : '';
+                                },
+                                min: 0
+                            }
+                        }]
+                    },
+                    showScale: true,
+                    scaleShowGridLines: false,
+                    scaleGridLineColor: "rgba(0,0,0,.05)",
+                    scaleGridLineWidth: 1,
+                    scaleShowHorizontalLines: true,
+                    scaleShowVerticalLines: true,
+                    bezierCurve: true,
+                    pointDot: false,
+                    pointDotRadius: 4,
+                    pointDotStrokeWidth: 1,
+                    pointHitDetectionRadius: 20,
+                    datasetStroke: true,
+                    datasetFill: true,
+                    maintainAspectRatio: false,
+                    responsive: true
+                }
+            };
+
+            function changeOsPeriod(period) {
+                var osLabels = [];
+                var osData = [];
+
+                $.ajax({
+                    cache: false,
+                    type: "GET",
+                    url: "/Admin/Order/LoadOrderStatistics",
+                    data: {
+                        period: period
+                    },
+                    success: function (data, textStatus, jqXHR) {
+                        for (var i = 0; i < data.length; i++) {
+                            osLabels.push(data[i].date);
+                            osData.push(data[i].value);
+                        }
+
+                        if (!window.orderStatistics) {
+                            osConfig.data.labels = osLabels;
+                            osConfig.data.datasets[0].data = osData;
+                            osConfig.data.scales =
+                            window.orderStatistics = new Chart(document.getElementById("order-statistics-chart").getContext("2d"), osConfig);
+                        } else {
+                            window.orderStatistics.config.data.labels = osLabels;
+                            window.orderStatistics.config.data.datasets[0].data = osData;
+                            window.orderStatistics.update();
+                        }
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $("#loadOrderStatisticsAlert").click();
+                    }
+                });
+            }
+
+            $('#order-statistics-card button[data-chart-role="toggle-chart"]').on('click', function () {
+                var period = $(this).attr('data-chart-period');
+                osCurrentPeriod = period;
+                changeOsPeriod(period);
+                $('#order-statistics-card button[data-chart-role="toggle-chart"]').removeClass('bg-light-blue');
+                $(this).addClass('bg-light-blue');
+            });
+
+
+                    $('#order-statistics-card button[data-chart-role="toggle-chart"][data-chart-period="week"]').trigger('click');
+                    });
+    </script>
+    </div>
+    <div class="col-md-6">
+    <div class="card card-primary card-outline " id="customer-statistics-card">
+    <div class="card-header with-border">
+    <h3 class="card-title">
+    <i class="far fa-user"></i>
+    New customers
+    </h3>
+    <div class="card-tools float-right">
+    <button class="btn btn-xs btn-info btn-flat margin-r-5" data-chart-role="toggle-chart" data-chart-period="year">Year</button>
+    <button class="btn btn-xs btn-info btn-flat margin-r-5" data-chart-role="toggle-chart" data-chart-period="month">Month</button>
+    <button class="btn btn-xs btn-info btn-flat bg-light-blue" data-chart-role="toggle-chart" data-chart-period="week">Week</button>
+    <button class="btn btn-tool margin-l-10" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    </div>
+    </div>
+    <div class="card-body">
+    <div class="chart" style="height: 300px;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+    <canvas id="customer-statistics-chart" height="300" style="display: block; width: 358px; height: 300px;" width="358" class="chartjs-render-monitor"></canvas>
+    </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var csCurrentPeriod;
+
+            $('#customer-statistics-card').on('click',  'button[data-card-widget="collapse"]', function () {
+
+                var collapsed = !$('#customer-statistics-card').hasClass('collapsed-card');
+                saveUserPreferences('/Admin/Preferences/SavePreference', 'Reports.HideCustomerStatisticsCard', collapsed);
+
+                if (!collapsed) {
+                    $('#customer-statistics-card button[data-chart-role="toggle-chart"]').removeAttr('disabled');
+                    if (!csCurrentPeriod) {
+                        $('#customer-statistics-card button[data-chart-role="toggle-chart"][data-chart-period="week"]').trigger('click');
+                    }
+                } else {
+                    $('#customer-statistics-card button[data-chart-role="toggle-chart"]').attr('disabled', 'disabled');
+                }
+            });
+
+            var csConfig = {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [
+                        {
+                            label: "New customers",
+                            fillColor: "rgba(60,141,188,0.9)",
+                            strokeColor: "rgba(60,141,188,0.8)",
+                            pointColor: "#00a65a",
+                            pointStrokeColor: "rgba(0,166,90,1)",
+                            pointHighlightFill: "#fff",
+                            pointHighlightStroke: "rgba(0,166,90,1)",
+                            borderColor: 'rgba(0,166,90, 1)',
+                            backgroundColor: 'rgba(0,166,90,0.5)',
+                            pointBorderColor: 'rgba(0,166,90,0.7)',
+                            pointBackgroundColor: 'rgba(0,166,90,0.2)',
+                            pointBorderWidth: 1,
+                            data: []
+                        }
+                    ]
+                },
+                options: {
+                    legend: {
+                        display: false
+                    },
+                    scales: {
+                        xAxes: [{
+                            display: true,
+                            ticks: {
+                                userCallback: function (dataLabel, index) {
+                                    if (window.customerStatistics && window.customerStatistics.config.data.labels.length > 12) {
+                                        return index % 5 === 0 ? dataLabel : '';
+                                    }
+                                    return dataLabel;
+                                }
+                            }
+                        }],
+                        yAxes: [{
+                            display: true,
+                            ticks: {
+                                userCallback: function (dataLabel, index) {
+                                    return (dataLabel ^ 0) === dataLabel ? dataLabel : '';
+                                },
+                                min: 0
+                            }
+                        }]
+                    },
+                    showScale: true,
+                    scaleShowGridLines: false,
+                    scaleGridLineColor: "rgba(0,0,0,.05)",
+                    scaleGridLineWidth: 1,
+                    scaleShowHorizontalLines: true,
+                    scaleShowVerticalLines: true,
+                    bezierCurve: true,
+                    pointDot: false,
+                    pointDotRadius: 4,
+                    pointDotStrokeWidth: 1,
+                    pointHitDetectionRadius: 20,
+                    datasetStroke: true,
+                    datasetFill: true,
+                    maintainAspectRatio: false,
+                    responsive: true
+                }
+            };
+
+            function changeCsPeriod(period) {
+                var csLabels = [];
+                var csData = [];
+
+                $.ajax({
+                    cache: false,
+                    type: "GET",
+                    url: "/Admin/Customer/LoadCustomerStatistics",
+                    data: {
+                        period: period
+                    },
+                    success: function (data, textStatus, jqXHR) {
+                        for (var i = 0; i < data.length; i++) {
+                            csLabels.push(data[i].date);
+                            csData.push(data[i].value);
+                        }
+
+                        if (!window.customerStatistics) {
+                            csConfig.data.labels = csLabels;
+                            csConfig.data.datasets[0].data = csData;
+                            csConfig.data.scales =
+                            window.customerStatistics = new Chart(document.getElementById("customer-statistics-chart").getContext("2d"), csConfig);
+                        } else {
+                            window.customerStatistics.config.data.labels = csLabels;
+                            window.customerStatistics.config.data.datasets[0].data = csData;
+                            window.customerStatistics.update();
+                        }
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $("#loadCustomerStatisticsAlert").click();
+                    }
+                });
+            }
+
+            $('#customer-statistics-card button[data-chart-role="toggle-chart"]').on('click', function () {
+                var period = $(this).attr('data-chart-period');
+                csCurrentPeriod = period;
+                changeCsPeriod(period);
+                $('#customer-statistics-card button[data-chart-role="toggle-chart"]').removeClass('bg-light-blue');
+                $(this).addClass('bg-light-blue');
+            });
+
+
+                    $('#customer-statistics-card button[data-chart-role="toggle-chart"][data-chart-period="week"]').trigger('click');
+                    });
+    </script>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-8">
+    <div class="card card-primary card-outline " id="order-average-report-card">
+    <div class="card-header with-border">
+    <h3 class="card-title">
+    <i class="far fa-money-bill-alt"></i>
+    Order totals
+    </h3>
+    <div class="card-tools float-right">
+    <button class="btn btn-tool" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    </div>
+    </div>
+    <script>
+            $(document).ready(function () {
+                $('#order-average-report-card').on('click', 'button[data-card-widget="collapse"]', function () {
+                    var collapsed = !$('#order-average-report-card').hasClass('collapsed-card');
+                    saveUserPreferences('/Admin/Preferences/SavePreference', 'Reports.HideOrderAverageReportCard', collapsed);
+                });
+            });
+        </script>
+    <div class="card-body" style="padding-bottom: 22px;">
+    <div id="average-order-report-grid_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-md-12"><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 452px; padding-right: 0px;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" role="grid" style="margin-left: 0px; width: 452px;"><thead><tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 73px;">Order Status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 43px;">Today</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 39px;">This Week</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 46px;">This Month</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 36px;">This Year</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px;">All time</th></tr></thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" id="average-order-report-grid" role="grid" style="width: 100%;"><thead><tr role="row" style="height: 0px;"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 73px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Order Status</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 43px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Today</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 39px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">This Week</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 46px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">This Month</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 36px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">This Year</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">All time</div></th></tr></thead>
+    <tbody><tr class="odd"><td>Pending</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$2,468.80</td></tr><tr class="even"><td>Processing</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$1,957.00</td></tr><tr class="odd"><td>Complete</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$43.50</td></tr><tr class="even"><td>Cancelled</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td></tr></tbody></table></div></div></div></div><div class="row margin-t-5"><div class="col-lg-5 col-xs-12"><div class="float-lg-left"></div></div><div class="col-lg-3 col-xs-12"><div class="text-center"></div></div><div class="col-lg-3 col-xs-12"><div class="float-lg-right text-center"></div></div><div class="col-lg-1 col-xs-12"><div class="float-lg-right text-center data-tables-refresh"><div class="dt-buttons btn-group flex-wrap"><button class="btn btn-secondary" tabindex="0" aria-controls="average-order-report-grid" type="button"><span><i class="fas fa-sync-alt" style="padding-left: 5px"></i></span></button> </div></div></div></div></div>
+    <script>
+        $(document).ready(function () {
+            $('#average-order-report-grid').DataTable({
+
+
+
+
+        processing: true,
+
+        serverSide: true,
+
+        ajax:
+        {
+            url: "/Admin/Order/OrderAverageReportList",
+            type: "POST",
+            dataType: "json",
+            dataSrc: "Data",
+            beforeSend: function() {
+            },
+            data: function(data) {
+                addAntiForgeryToken(data);
+                return data;
+            }
+        },
+        scrollX: true,
+    info: false,
+    paging: false,
+    pagingType: 'simple_numbers',
+    language: {
+        "emptyTable":     "No data available in table",
+        "info":           "_START_-_END_ of _TOTAL_ items",
+        "infoEmpty":      "No records",
+        "infoFiltered":   "(filtered from _MAX_ total entries)",
+        "thousands":      ",",
+        "lengthMenu":     "Show _MENU_ items",
+        "loadingRecords": "Loading...",
+        "processing":     "\u003Ci class=\u0027fas fa-refresh fa-spin\u0027\u003E\u003C/i\u003E",
+        "search":         "Search:",
+        "zeroRecords":    "No matching records found",
+        "paginate": {
+
+                    "first":"<i class='k-icon k-i-seek-w'></i>",
+                    "last":"<i class='k-icon k-i-seek-e'></i>",
+                    "next":"<i class='k-icon k-i-arrow-e'></i>",
+                    "previous":"<i class='k-icon k-i-arrow-w'></i>"
+                    },
+        "aria": {
+            "sortAscending":  ": activate to sort column ascending",
+            "sortDescending": ": activate to sort column descending"
+        }
+    },
+    pageLength: 2147483647,
+
+            lengthChange: false,
+        ordering: false,
+
+            buttons: [{
+                name: 'refresh',
+                text: '<i class="fas fa-sync-alt" style="padding-left: 5px"></i>',
+                action: function () {
+
+                        updateTable('#average-order-report-grid', false);
+                                    }
+            }],
+        dom: '\u003C\u0027row\u0027\u003C\u0027col-md-12\u0027t\u003E\u003E\u003C\u0027row margin-t-5\u0027\u003C\u0027col-lg-5 col-xs-12\u0027\u003C\u0027float-lg-left\u0027p\u003E\u003E\u003C\u0027col-lg-3 col-xs-12\u0027\u003C\u0027text-center\u0027l\u003E\u003E\u003C\u0027col-lg-3 col-xs-12\u0027\u003C\u0027float-lg-right text-center\u0027i\u003E\u003E\u003C\u0027col-lg-1 col-xs-12\u0027\u003C\u0027float-lg-right text-center data-tables-refresh\u0027B\u003E\u003E\u003E',
+    columns: [
+
+            {
+
+                    title: 'Order Status',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'OrderStatus'
+            }
+    ,
+            {
+
+                    title: 'Today',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'SumTodayOrders'
+            }
+    ,
+            {
+
+                    title: 'This Week',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'SumThisWeekOrders'
+            }
+    ,
+            {
+
+                    title: 'This Month',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'SumThisMonthOrders'
+            }
+    ,
+            {
+
+                    title: 'This Year',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'SumThisYearOrders'
+            }
+    ,
+            {
+
+                    title: 'All time',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'SumAllTimeOrders'
+            }
+            ]
+            });
+
+            $('#average-order-report-grid').DataTable().columns.adjust();
+
+        });
+    </script>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="card card-primary card-outline " id="order-incomplete-report-card">
+    <div class="card-header with-border">
+    <h3 class="card-title">
+    <i class="fas fa-hourglass-start"></i>
+    Incomplete orders
+    </h3>
+    <div class="card-tools float-right">
+    <button class="btn btn-tool" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    </div>
+    </div>
+    <script>
+            $(document).ready(function () {
+                $('#order-incomplete-report-card').on('click', 'button[data-card-widget="collapse"]', function () {
+                    var collapsed = !$('#order-incomplete-report-card').hasClass('collapsed-card');
+                    saveUserPreferences('/Admin/Preferences/SavePreference', 'Reports.HideOrderIncompleteReportCard', collapsed);
+                });
+            });
+        </script>
+    <div class="card-body">
+    <div id="incomplete-order-report-grid_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-md-12"><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 358px; padding-right: 0px;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" role="grid" style="margin-left: 0px; width: 358px;"><thead><tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 98px;">Item</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px;">Total</th><th class="sorting_disabled button-column" rowspan="1" colspan="1" style="width: 120px;">Count</th></tr></thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" id="incomplete-order-report-grid" role="grid" style="width: 100%;"><thead><tr role="row" style="height: 0px;"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 98px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Item</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Total</div></th><th class="sorting_disabled button-column" rowspan="1" colspan="1" style="width: 120px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Count</div></th></tr></thead>
+    <tbody><tr class="odd"><td>Total unpaid orders (pending payment status)</td><td>$2,468.80</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Order/List?orderStatuses=10,20,30&amp;paymentStatuses=10"><i class="far fa-eye"></i>2 - view all</a></td></tr><tr class="even"><td>Total not yet shipped orders</td><td>$4,315.00</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Order/List?orderStatuses=10,20,30&amp;shippingStatuses=20"><i class="far fa-eye"></i>2 - view all</a></td></tr><tr class="odd"><td>Total incomplete orders (pending order status)</td><td>$2,468.80</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Order/List?orderStatuses=10"><i class="far fa-eye"></i>2 - view all</a></td></tr></tbody></table></div></div></div></div><div class="row margin-t-5"><div class="col-lg-5 col-xs-12"><div class="float-lg-left"></div></div><div class="col-lg-3 col-xs-12"><div class="text-center"></div></div><div class="col-lg-3 col-xs-12"><div class="float-lg-right text-center"></div></div><div class="col-lg-1 col-xs-12"><div class="float-lg-right text-center data-tables-refresh"><div class="dt-buttons btn-group flex-wrap"><button class="btn btn-secondary" tabindex="0" aria-controls="incomplete-order-report-grid" type="button"><span><i class="fas fa-sync-alt" style="padding-left: 5px"></i></span></button> </div></div></div></div></div>
+    <script>
+        $(document).ready(function () {
+            $('#incomplete-order-report-grid').DataTable({
+
+
+
+
+        processing: true,
+
+        serverSide: true,
+
+        ajax:
+        {
+            url: "/Admin/Order/OrderIncompleteReportList",
+            type: "POST",
+            dataType: "json",
+            dataSrc: "Data",
+            beforeSend: function() {
+            },
+            data: function(data) {
+                addAntiForgeryToken(data);
+                return data;
+            }
+        },
+        scrollX: true,
+    info: false,
+    paging: false,
+    pagingType: 'simple_numbers',
+    language: {
+        "emptyTable":     "No data available in table",
+        "info":           "_START_-_END_ of _TOTAL_ items",
+        "infoEmpty":      "No records",
+        "infoFiltered":   "(filtered from _MAX_ total entries)",
+        "thousands":      ",",
+        "lengthMenu":     "Show _MENU_ items",
+        "loadingRecords": "Loading...",
+        "processing":     "\u003Ci class=\u0027fas fa-refresh fa-spin\u0027\u003E\u003C/i\u003E",
+        "search":         "Search:",
+        "zeroRecords":    "No matching records found",
+        "paginate": {
+
+                    "first":"<i class='k-icon k-i-seek-w'></i>",
+                    "last":"<i class='k-icon k-i-seek-e'></i>",
+                    "next":"<i class='k-icon k-i-arrow-e'></i>",
+                    "previous":"<i class='k-icon k-i-arrow-w'></i>"
+                    },
+        "aria": {
+            "sortAscending":  ": activate to sort column ascending",
+            "sortDescending": ": activate to sort column descending"
+        }
+    },
+    pageLength: 2147483647,
+
+            lengthChange: false,
+        ordering: false,
+
+            buttons: [{
+                name: 'refresh',
+                text: '<i class="fas fa-sync-alt" style="padding-left: 5px"></i>',
+                action: function () {
+
+                        updateTable('#incomplete-order-report-grid', false);
+                                    }
+            }],
+        dom: '\u003C\u0027row\u0027\u003C\u0027col-md-12\u0027t\u003E\u003E\u003C\u0027row margin-t-5\u0027\u003C\u0027col-lg-5 col-xs-12\u0027\u003C\u0027float-lg-left\u0027p\u003E\u003E\u003C\u0027col-lg-3 col-xs-12\u0027\u003C\u0027text-center\u0027l\u003E\u003E\u003C\u0027col-lg-3 col-xs-12\u0027\u003C\u0027float-lg-right text-center\u0027i\u003E\u003E\u003C\u0027col-lg-1 col-xs-12\u0027\u003C\u0027float-lg-right text-center data-tables-refresh\u0027B\u003E\u003E\u003E',
+    columns: [
+
+            {
+
+                    title: 'Item',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'Item'
+            }
+    ,
+            {
+
+                    title: 'Total',
+                                width: '50',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'Total'
+            }
+    ,
+            {
+
+                    title: 'Count',
+                                width: '120',
+                visible: true,
+                searchable: false,
+
+                    className: 'button-column',
+
+                        render: function (data, type, row, meta) {
+                            return renderColumnOrderIncompleteReportCount(data, type, row, meta);
+                        },
+                                    data: 'Count'
+            }
+            ]
+            });
+
+            $('#incomplete-order-report-grid').DataTable().columns.adjust();
+
+        });
+    </script>
+    <script>
+                function renderColumnOrderIncompleteReportCount(data, type, row, meta) {
+                    return '<a class="btn btn-default" href="' + row.ViewLink +'"><i class="far fa-eye"></i>' + row.Count + ' - view all</a>';
+                }
+            </script>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-8">
+    <div class="card card-primary card-outline " id="latest-orders-card">
+    <div class="card-header with-border">
+    <h3 class="card-title">
+    <i class="fas fa-cart-plus"></i>
+    Latest Orders
+    <a class="btn btn-xs btn-info btn-flat margin-l-10" href="/Admin/Order/List">View All Orders</a>
+    </h3>
+    <div class="card-tools float-right">
+    <button class="btn btn-tool" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    </div>
+    </div>
+    <script>
+                $(document).ready(function () {
+                    $('#latest-orders-card').on('click', 'button[data-card-widget="collapse"]', function () {
+                        var collapsed = !$('#latest-orders-card').hasClass('collapsed-card');
+                        saveUserPreferences('/Admin/Preferences/SavePreference', 'Reports.HideLatestOrdersCard', collapsed);
+                    });
+                });
+            </script>
+    <div class="card-body">
+    <div id="orders-grid_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-md-12"><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 664px; padding-right: 0px;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" role="grid" style="margin-left: 0px; width: 664px;"><thead><tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 41px;">Order #</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 92px;">Order status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 267px;">Customer</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 75px;">Created on</th><th class="sorting_disabled button-column" rowspan="1" colspan="1" style="width: 63px;">View</th></tr></thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" id="orders-grid" role="grid" aria-describedby="orders-grid_info" style="width: 100%;"><thead><tr role="row" style="height: 0px;"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 41px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Order #</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 92px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Order status</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 267px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Customer</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 75px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Created on</div></th><th class="sorting_disabled button-column" rowspan="1" colspan="1" style="width: 63px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">View</div></th></tr></thead>
+    <tbody><tr class="odd"><td>5</td><td><span class="grid-report-item green">Complete</span></td><td>Victoria Terces (victoria_victoria@nopCommerce.com)</td><td>03/13/2017 6:20:10 AM</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Order/Edit/5"><i class="far fa-eye"></i>View</a></td></tr><tr class="even"><td>4</td><td><span class="grid-report-item blue">Processing</span></td><td>Brenda Lindgren (brenda_lindgren@nopCommerce.com)</td><td>03/13/2017 6:20:09 AM</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Order/Edit/4"><i class="far fa-eye"></i>View</a></td></tr><tr class="odd"><td>3</td><td><span class="grid-report-item yellow">Pending</span></td><td>James Pan (james_pan@nopCommerce.com)</td><td>03/13/2017 6:20:09 AM</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Order/Edit/3"><i class="far fa-eye"></i>View</a></td></tr><tr class="even"><td>2</td><td><span class="grid-report-item yellow">Pending</span></td><td>Arthur Holmes (arthur_holmes@nopCommerce.com)</td><td>03/13/2017 6:20:09 AM</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Order/Edit/2"><i class="far fa-eye"></i>View</a></td></tr><tr class="odd"><td>1</td><td><span class="grid-report-item blue">Processing</span></td><td>Steve Gates (steve_gates@nopCommerce.com)</td><td>03/13/2017 6:20:09 AM</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Order/Edit/1"><i class="far fa-eye"></i>View</a></td></tr></tbody></table></div></div></div></div><div class="row margin-t-5"><div class="col-lg-10 col-xs-12"><div class="float-lg-left"><div class="dataTables_paginate paging_simple_numbers" id="orders-grid_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="orders-grid_previous"><a href="#" aria-controls="orders-grid" data-dt-idx="0" tabindex="0" class="page-link"><i class="k-icon k-i-arrow-w"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="orders-grid" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="orders-grid_next"><a href="#" aria-controls="orders-grid" data-dt-idx="2" tabindex="0" class="page-link"><i class="k-icon k-i-arrow-e"></i></a></li></ul></div></div></div><div class="col-lg-2 col-xs-12"><div class="float-lg-right text-center"><div class="dataTables_info" id="orders-grid_info" role="status" aria-live="polite">1-5 of 5 items</div></div></div></div></div>
+    <script>
+        $(document).ready(function () {
+            $('#orders-grid').DataTable({
+
+
+
+
+        processing: true,
+
+        serverSide: true,
+
+        ajax:
+        {
+            url: "/Admin/Order/OrderList",
+            type: "POST",
+            dataType: "json",
+            dataSrc: "Data",
+            beforeSend: function() {
+            },
+            data: function(data) {
+                addAntiForgeryToken(data);
+                return data;
+            }
+        },
+        scrollX: true,
+    info: true,
+    paging: true,
+    pagingType: 'simple_numbers',
+    language: {
+        "emptyTable":     "No data available in table",
+        "info":           "_START_-_END_ of _TOTAL_ items",
+        "infoEmpty":      "No records",
+        "infoFiltered":   "(filtered from _MAX_ total entries)",
+        "thousands":      ",",
+        "lengthMenu":     "Show _MENU_ items",
+        "loadingRecords": "Loading...",
+        "processing":     "\u003Ci class=\u0027fas fa-refresh fa-spin\u0027\u003E\u003C/i\u003E",
+        "search":         "Search:",
+        "zeroRecords":    "No matching records found",
+        "paginate": {
+
+                    "first":"<i class='k-icon k-i-seek-w'></i>",
+                    "last":"<i class='k-icon k-i-seek-e'></i>",
+                    "next":"<i class='k-icon k-i-arrow-e'></i>",
+                    "previous":"<i class='k-icon k-i-arrow-w'></i>"
+                    },
+        "aria": {
+            "sortAscending":  ": activate to sort column ascending",
+            "sortDescending": ": activate to sort column descending"
+        }
+    },
+    pageLength: 5,
+
+            lengthChange: false,
+        ordering: false,
+
+            buttons: [{
+                name: 'refresh',
+                text: '<i class="fas fa-sync-alt" style="padding-left: 5px"></i>',
+                action: function () {
+
+                        updateTable('#orders-grid', false);
+                                    }
+            }],
+        dom: '\u003C\u0027row\u0027\u003C\u0027col-md-12\u0027t\u003E\u003E\u003C\u0027row margin-t-5\u0027\u003C\u0027col-lg-10 col-xs-12\u0027\u003C\u0027float-lg-left\u0027p\u003E\u003E\u003C\u0027col-lg-2 col-xs-12\u0027\u003C\u0027float-lg-right text-center\u0027i\u003E\u003E\u003E',
+    columns: [
+
+            {
+
+                    title: 'Order #',
+                                width: '80',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'CustomOrderNumber'
+            }
+    ,
+            {
+
+                    title: 'Order status',
+                                width: '100',
+                visible: true,
+                searchable: false,
+
+                        render: function (data, type, row, meta) {
+                            return renderColumnOrderStatus(data, type, row, meta);
+                        },
+                                    data: 'OrderStatus'
+            }
+    ,
+            {
+
+                    title: 'Customer',
+                                width: '250',
+                visible: true,
+                searchable: false,
+
+                        render: function (data, type, row, meta) {
+                            return renderColumnCustomerEmail(data, type, row, meta);
+                        },
+                                    data: 'CustomerEmail'
+            }
+    ,
+            {
+
+                    title: 'Created on',
+                                width: '100',
+                visible: true,
+                searchable: false,
+
+                        render: function (data, type, row, meta) {
+                            return (data) ? moment(data).locale('en-US').format('L LTS') : null;
+                        },
+                                    data: 'CreatedOn'
+            }
+    ,
+            {
+
+                    title: 'View',
+                                width: '50',
+                visible: true,
+                searchable: false,
+
+                    className: 'button-column',
+
+                        render: function (data, type, row, meta) {
+                            return '<a class="btn btn-default" href="/Admin/Order/Edit/' + data + '"><i class="far fa-eye"></i>View</a>';
+                        },
+                                    data: 'Id'
+            }
+            ]
+            });
+
+            $('#orders-grid').DataTable().columns.adjust();
+
+        });
+    </script>
+    <script>
+                function renderColumnCustomerEmail(data, type, row, meta) {
+                    var textRenderer = $.fn.dataTable.render.text().display;
+                    return textRenderer(row.CustomerFullName) + ' (' + textRenderer(row.CustomerEmail) + ')';
+                }
+
+                function renderColumnOrderStatus(data, type, row, meta) {
+                    var color;
+                    switch (row.OrderStatusId) {
+                        case 10:
+                            color = 'yellow';
+                            break;
+                        case 20:
+                            color = 'blue';
+                            break;
+                        case 30:
+                            color = 'green';
+                            break;
+                        case 40:
+                            color = 'red';
+                            break;
+                    }
+                    return '<span class="grid-report-item ' + color + '">' + data + '</span >';
+                }
+            </script>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="card card-primary card-outline " id="popular-search-terms-card">
+    <div class="card-header with-border">
+    <h3 class="card-title">
+    <i class="fas fa-search"></i>
+    Popular search keywords
+    </h3>
+    <div class="card-tools float-right">
+    <button class="btn btn-tool" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    </div>
+    </div>
+    <script>
+            $(document).ready(function () {
+                $('#popular-search-terms-card').on('click', 'button[data-card-widget="collapse"]', function () {
+                    var collapsed = !$('#popular-search-terms-card').hasClass('collapsed-card');
+                    saveUserPreferences('/Admin/Preferences/SavePreference', 'Reports.HidePopularSearchTermsReport', collapsed);
+                });
+            });
+        </script>
+    <div class="card-body">
+    <div id="search-term-report-grid_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-md-12"><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 358px; padding-right: 0px;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" role="grid" style="margin-left: 0px; width: 358px;"><thead><tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 178px;">Keyword</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 129px;">Count</th></tr></thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" id="search-term-report-grid" role="grid" aria-describedby="search-term-report-grid_info" style="width: 100%;"><thead><tr role="row" style="height: 0px;"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 178px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Keyword</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 129px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Count</div></th></tr></thead>
+    <tbody><tr class="odd"><td>computer</td><td>34</td></tr><tr class="even"><td>camera</td><td>30</td></tr><tr class="odd"><td>jewelry</td><td>27</td></tr><tr class="even"><td>shoes</td><td>26</td></tr><tr class="odd"><td>jeans</td><td>19</td></tr></tbody></table></div></div></div></div><div class="row margin-t-5"><div class="col-lg-10 col-xs-12"><div class="float-lg-left"><div class="dataTables_paginate paging_simple_numbers" id="search-term-report-grid_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="search-term-report-grid_previous"><a href="#" aria-controls="search-term-report-grid" data-dt-idx="0" tabindex="0" class="page-link"><i class="k-icon k-i-arrow-w"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="search-term-report-grid" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="search-term-report-grid" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item next" id="search-term-report-grid_next"><a href="#" aria-controls="search-term-report-grid" data-dt-idx="3" tabindex="0" class="page-link"><i class="k-icon k-i-arrow-e"></i></a></li></ul></div></div></div><div class="col-lg-2 col-xs-12"><div class="float-lg-right text-center"><div class="dataTables_info" id="search-term-report-grid_info" role="status" aria-live="polite">1-5 of 6 items</div></div></div></div></div>
+    <script>
+        $(document).ready(function () {
+            $('#search-term-report-grid').DataTable({
+
+
+
+
+        processing: true,
+
+        serverSide: true,
+
+        ajax:
+        {
+            url: "/Admin/Common/PopularSearchTermsReport",
+            type: "POST",
+            dataType: "json",
+            dataSrc: "Data",
+            beforeSend: function() {
+            },
+            data: function(data) {
+                addAntiForgeryToken(data);
+                return data;
+            }
+        },
+        scrollX: true,
+    info: true,
+    paging: true,
+    pagingType: 'simple_numbers',
+    language: {
+        "emptyTable":     "No data available in table",
+        "info":           "_START_-_END_ of _TOTAL_ items",
+        "infoEmpty":      "No records",
+        "infoFiltered":   "(filtered from _MAX_ total entries)",
+        "thousands":      ",",
+        "lengthMenu":     "Show _MENU_ items",
+        "loadingRecords": "Loading...",
+        "processing":     "\u003Ci class=\u0027fas fa-refresh fa-spin\u0027\u003E\u003C/i\u003E",
+        "search":         "Search:",
+        "zeroRecords":    "No matching records found",
+        "paginate": {
+
+                    "first":"<i class='k-icon k-i-seek-w'></i>",
+                    "last":"<i class='k-icon k-i-seek-e'></i>",
+                    "next":"<i class='k-icon k-i-arrow-e'></i>",
+                    "previous":"<i class='k-icon k-i-arrow-w'></i>"
+                    },
+        "aria": {
+            "sortAscending":  ": activate to sort column ascending",
+            "sortDescending": ": activate to sort column descending"
+        }
+    },
+    pageLength: 5,
+
+            lengthChange: false,
+        ordering: false,
+
+            buttons: [{
+                name: 'refresh',
+                text: '<i class="fas fa-sync-alt" style="padding-left: 5px"></i>',
+                action: function () {
+
+                        updateTable('#search-term-report-grid', false);
+                                    }
+            }],
+        dom: '\u003C\u0027row\u0027\u003C\u0027col-md-12\u0027t\u003E\u003E\u003C\u0027row margin-t-5\u0027\u003C\u0027col-lg-10 col-xs-12\u0027\u003C\u0027float-lg-left\u0027p\u003E\u003E\u003C\u0027col-lg-2 col-xs-12\u0027\u003C\u0027float-lg-right text-center\u0027i\u003E\u003E\u003E',
+    columns: [
+
+            {
+
+                    title: 'Keyword',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'Keyword'
+            }
+    ,
+            {
+
+                    title: 'Count',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'Count'
+            }
+            ]
+            });
+
+            $('#search-term-report-grid').DataTable().columns.adjust();
+
+        });
+    </script>
+    </div>
+    </div> </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+    <div class="card card-primary card-outline " id="bestsellers-report-quantity-card">
+    <div class="card-header with-border">
+    <h3 class="card-title">
+    <i class="fas fa-star"></i>
+    Bestsellers by quantity
+    </h3>
+    <div class="card-tools float-right">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    </div>
+    </div>
+    <script>
+            $(document).ready(function () {
+                $('#bestsellers-report-quantity-card').on('click', 'button[data-card-widget="collapse"]', function () {
+                    var collapsed = !$('#bestsellers-report-quantity-card').hasClass('collapsed-card');
+                    saveUserPreferences('/Admin/Preferences/SavePreference', 'Reports.HideBestsellersBriefReportByQuantityCard', collapsed);
+                });
+            });
+        </script>
+    <div class="card-body">
+    <div id="bestsellers-byquantity-grid_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-md-12"><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 360px; padding-right: 0px;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" role="grid" style="margin-left: 0px; width: 360px;"><thead><tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 71px;">Name</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 61px;">Total quantity</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px;">Total amount (excl tax)</th><th class="sorting_disabled button-column" rowspan="1" colspan="1" style="width: 63px;">View</th></tr></thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" id="bestsellers-byquantity-grid" role="grid" aria-describedby="bestsellers-byquantity-grid_info" style="width: 100%;"><thead><tr role="row" style="height: 0px;"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 71px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Name</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 61px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Total quantity</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Total amount (excl tax)</div></th><th class="sorting_disabled button-column" rowspan="1" colspan="1" style="width: 63px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">View</div></th></tr></thead>
+    <tbody><tr class="odd"><td>Leica T Mirrorless Digital Camera</td><td>1</td><td>$530.00</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Product/Edit/16"><i class="far fa-eye"></i>View</a></td></tr><tr class="even"><td>Apple iCam</td><td>1</td><td>$1,300.00</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Product/Edit/17"><i class="far fa-eye"></i>View</a></td></tr><tr class="odd"><td>Levi's 511 Jeans</td><td>1</td><td>$43.50</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Product/Edit/30"><i class="far fa-eye"></i>View</a></td></tr><tr class="even"><td>Night Visions</td><td>1</td><td>$2.80</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Product/Edit/34"><i class="far fa-eye"></i>View</a></td></tr><tr class="odd"><td>If You Wait (donation)</td><td>1</td><td>$3.00</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Product/Edit/35"><i class="far fa-eye"></i>View</a></td></tr></tbody></table></div></div></div></div><div class="row margin-t-5"><div class="col-lg-10 col-xs-12"><div class="float-lg-left"><div class="dataTables_paginate paging_simple_numbers" id="bestsellers-byquantity-grid_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="bestsellers-byquantity-grid_previous"><a href="#" aria-controls="bestsellers-byquantity-grid" data-dt-idx="0" tabindex="0" class="page-link"><i class="k-icon k-i-arrow-w"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="bestsellers-byquantity-grid" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="bestsellers-byquantity-grid" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="bestsellers-byquantity-grid" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item next" id="bestsellers-byquantity-grid_next"><a href="#" aria-controls="bestsellers-byquantity-grid" data-dt-idx="4" tabindex="0" class="page-link"><i class="k-icon k-i-arrow-e"></i></a></li></ul></div></div></div><div class="col-lg-2 col-xs-12"><div class="float-lg-right text-center"><div class="dataTables_info" id="bestsellers-byquantity-grid_info" role="status" aria-live="polite">1-5 of 12 items</div></div></div></div></div>
+    <script>
+        $(document).ready(function () {
+            $('#bestsellers-byquantity-grid').DataTable({
+
+
+
+
+        processing: true,
+
+        serverSide: true,
+
+        ajax:
+        {
+            url: "/Admin/Order/BestsellersBriefReportByQuantityList?OrderBy=OrderByQuantity",
+            type: "POST",
+            dataType: "json",
+            dataSrc: "Data",
+            beforeSend: function() {
+            },
+            data: function(data) {
+                addAntiForgeryToken(data);
+                return data;
+            }
+        },
+        scrollX: true,
+    info: true,
+    paging: true,
+    pagingType: 'simple_numbers',
+    language: {
+        "emptyTable":     "No data available in table",
+        "info":           "_START_-_END_ of _TOTAL_ items",
+        "infoEmpty":      "No records",
+        "infoFiltered":   "(filtered from _MAX_ total entries)",
+        "thousands":      ",",
+        "lengthMenu":     "Show _MENU_ items",
+        "loadingRecords": "Loading...",
+        "processing":     "\u003Ci class=\u0027fas fa-refresh fa-spin\u0027\u003E\u003C/i\u003E",
+        "search":         "Search:",
+        "zeroRecords":    "No matching records found",
+        "paginate": {
+
+                    "first":"<i class='k-icon k-i-seek-w'></i>",
+                    "last":"<i class='k-icon k-i-seek-e'></i>",
+                    "next":"<i class='k-icon k-i-arrow-e'></i>",
+                    "previous":"<i class='k-icon k-i-arrow-w'></i>"
+                    },
+        "aria": {
+            "sortAscending":  ": activate to sort column ascending",
+            "sortDescending": ": activate to sort column descending"
+        }
+    },
+    pageLength: 5,
+
+            lengthChange: false,
+        ordering: false,
+
+            buttons: [{
+                name: 'refresh',
+                text: '<i class="fas fa-sync-alt" style="padding-left: 5px"></i>',
+                action: function () {
+
+                        updateTable('#bestsellers-byquantity-grid', false);
+                                    }
+            }],
+        dom: '\u003C\u0027row\u0027\u003C\u0027col-md-12\u0027t\u003E\u003E\u003C\u0027row margin-t-5\u0027\u003C\u0027col-lg-10 col-xs-12\u0027\u003C\u0027float-lg-left\u0027p\u003E\u003E\u003C\u0027col-lg-2 col-xs-12\u0027\u003C\u0027float-lg-right text-center\u0027i\u003E\u003E\u003E',
+    columns: [
+
+            {
+
+                    title: 'Name',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'ProductName'
+            }
+    ,
+            {
+
+                    title: 'Total quantity',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'TotalQuantity'
+            }
+    ,
+            {
+
+                    title: 'Total amount (excl tax)',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'TotalAmount'
+            }
+    ,
+            {
+
+                    title: 'View',
+                                width: '80',
+                visible: true,
+                searchable: false,
+
+                    className: 'button-column',
+
+                        render: function (data, type, row, meta) {
+                            return '<a class="btn btn-default" href="/Admin/Product/Edit/' + data + '"><i class="far fa-eye"></i>View</a>';
+                        },
+                                    data: 'ProductId'
+            }
+            ]
+            });
+
+            $('#bestsellers-byquantity-grid').DataTable().columns.adjust();
+
+        });
+    </script>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="card card-primary card-outline " id="bestsellers-report-amount-card">
+    <div class="card-header with-border">
+    <h3 class="card-title">
+    <i class="far fa-star"></i>
+    Bestsellers by amount
+    </h3>
+    <div class="card-tools float-right">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+    <i class="fas fa-minus"></i> </button>
+    </div>
+    </div>
+    <script>
+            $(document).ready(function () {
+                $('#bestsellers-report-amount-card').on('click', 'button[data-card-widget="collapse"]', function () {
+                    var collapsed = !$('#bestsellers-report-amount-card').hasClass('collapsed-card');
+                    saveUserPreferences('/Admin/Preferences/SavePreference', 'Reports.HideBestsellersBriefReportByAmountCard', collapsed);
+                });
+            });
+        </script>
+    <div class="card-body">
+    <div id="bestsellers-byamount-grid_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-md-12"><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 374px; padding-right: 0px;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" role="grid" style="margin-left: 0px; width: 374px;"><thead><tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 85px;">Name</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 61px;">Total quantity</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px;">Total amount (excl tax)</th><th class="sorting_disabled button-column" rowspan="1" colspan="1" style="width: 63px;">View</th></tr></thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%;"><table class="table table-bordered table-hover table-striped dataTable no-footer" width="100%" id="bestsellers-byamount-grid" role="grid" aria-describedby="bestsellers-byamount-grid_info" style="width: 100%;"><thead><tr role="row" style="height: 0px;"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 85px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Name</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 61px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Total quantity</div></th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 64px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">Total amount (excl tax)</div></th><th class="sorting_disabled button-column" rowspan="1" colspan="1" style="width: 63px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">View</div></th></tr></thead>
+    <tbody><tr class="odd"><td>Vintage Style Engagement Ring</td><td>1</td><td>$2,100.00</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Product/Edit/42"><i class="far fa-eye"></i>View</a></td></tr><tr class="even"><td>Apple iCam</td><td>1</td><td>$1,300.00</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Product/Edit/17"><i class="far fa-eye"></i>View</a></td></tr><tr class="odd"><td>Leica T Mirrorless Digital Camera</td><td>1</td><td>$530.00</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Product/Edit/16"><i class="far fa-eye"></i>View</a></td></tr><tr class="even"><td>Flower Girl Bracelet</td><td>1</td><td>$360.00</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Product/Edit/41"><i class="far fa-eye"></i>View</a></td></tr><tr class="odd"><td>First Prize Pies</td><td>1</td><td>$51.00</td><td class=" button-column"><a class="btn btn-default" href="/Admin/Product/Edit/38"><i class="far fa-eye"></i>View</a></td></tr></tbody></table></div></div></div></div><div class="row margin-t-5"><div class="col-lg-10 col-xs-12"><div class="float-lg-left"><div class="dataTables_paginate paging_simple_numbers" id="bestsellers-byamount-grid_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="bestsellers-byamount-grid_previous"><a href="#" aria-controls="bestsellers-byamount-grid" data-dt-idx="0" tabindex="0" class="page-link"><i class="k-icon k-i-arrow-w"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="bestsellers-byamount-grid" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="bestsellers-byamount-grid" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="bestsellers-byamount-grid" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item next" id="bestsellers-byamount-grid_next"><a href="#" aria-controls="bestsellers-byamount-grid" data-dt-idx="4" tabindex="0" class="page-link"><i class="k-icon k-i-arrow-e"></i></a></li></ul></div></div></div><div class="col-lg-2 col-xs-12"><div class="float-lg-right text-center"><div class="dataTables_info" id="bestsellers-byamount-grid_info" role="status" aria-live="polite">1-5 of 12 items</div></div></div></div></div>
+    <script>
+        $(document).ready(function () {
+            $('#bestsellers-byamount-grid').DataTable({
+
+
+
+
+        processing: true,
+
+        serverSide: true,
+
+        ajax:
+        {
+            url: "/Admin/Order/BestsellersBriefReportByAmountList?OrderBy=OrderByTotalAmount",
+            type: "POST",
+            dataType: "json",
+            dataSrc: "Data",
+            beforeSend: function() {
+            },
+            data: function(data) {
+                addAntiForgeryToken(data);
+                return data;
+            }
+        },
+        scrollX: true,
+    info: true,
+    paging: true,
+    pagingType: 'simple_numbers',
+    language: {
+        "emptyTable":     "No data available in table",
+        "info":           "_START_-_END_ of _TOTAL_ items",
+        "infoEmpty":      "No records",
+        "infoFiltered":   "(filtered from _MAX_ total entries)",
+        "thousands":      ",",
+        "lengthMenu":     "Show _MENU_ items",
+        "loadingRecords": "Loading...",
+        "processing":     "\u003Ci class=\u0027fas fa-refresh fa-spin\u0027\u003E\u003C/i\u003E",
+        "search":         "Search:",
+        "zeroRecords":    "No matching records found",
+        "paginate": {
+
+                    "first":"<i class='k-icon k-i-seek-w'></i>",
+                    "last":"<i class='k-icon k-i-seek-e'></i>",
+                    "next":"<i class='k-icon k-i-arrow-e'></i>",
+                    "previous":"<i class='k-icon k-i-arrow-w'></i>"
+                    },
+        "aria": {
+            "sortAscending":  ": activate to sort column ascending",
+            "sortDescending": ": activate to sort column descending"
+        }
+    },
+    pageLength: 5,
+
+            lengthChange: false,
+        ordering: false,
+
+            buttons: [{
+                name: 'refresh',
+                text: '<i class="fas fa-sync-alt" style="padding-left: 5px"></i>',
+                action: function () {
+
+                        updateTable('#bestsellers-byamount-grid', false);
+                                    }
+            }],
+        dom: '\u003C\u0027row\u0027\u003C\u0027col-md-12\u0027t\u003E\u003E\u003C\u0027row margin-t-5\u0027\u003C\u0027col-lg-10 col-xs-12\u0027\u003C\u0027float-lg-left\u0027p\u003E\u003E\u003C\u0027col-lg-2 col-xs-12\u0027\u003C\u0027float-lg-right text-center\u0027i\u003E\u003E\u003E',
+    columns: [
+
+            {
+
+                    title: 'Name',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'ProductName'
+            }
+    ,
+            {
+
+                    title: 'Total quantity',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'TotalQuantity'
+            }
+    ,
+            {
+
+                    title: 'Total amount (excl tax)',
+                                width: '',
+                visible: true,
+                searchable: false,
+
+                    render: function (data, type, row, meta) {
+                        return escapeHtml(data)
+                    },
+                                data: 'TotalAmount'
+            }
+    ,
+            {
+
+                    title: 'View',
+                                width: '80',
+                visible: true,
+                searchable: false,
+
+                    className: 'button-column',
+
+                        render: function (data, type, row, meta) {
+                            return '<a class="btn btn-default" href="/Admin/Product/Edit/' + data + '"><i class="far fa-eye"></i>View</a>';
+                        },
+                                    data: 'ProductId'
+            }
+            ]
+            });
+
+            $('#bestsellers-byamount-grid').DataTable().columns.adjust();
+
+        });
+    </script>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+  <h2>Section title</h2>
+  <div class="table-responsive">
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Header</th>
+          <th scope="col">Header</th>
+          <th scope="col">Header</th>
+          <th scope="col">Header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1,001</td>
+          <td>random</td>
+          <td>data</td>
+          <td>placeholder</td>
+          <td>text</td>
+        </tr>
+        <tr>
+          <td>1,002</td>
+          <td>placeholder</td>
+          <td>irrelevant</td>
+          <td>visual</td>
+          <td>layout</td>
+        </tr>
+        <tr>
+          <td>1,003</td>
+          <td>data</td>
+          <td>rich</td>
+          <td>dashboard</td>
+          <td>tabular</td>
+        </tr>
+        <tr>
+          <td>1,003</td>
+          <td>information</td>
+          <td>placeholder</td>
+          <td>illustrative</td>
+          <td>data</td>
+        </tr>
+        <tr>
+          <td>1,004</td>
+          <td>text</td>
+          <td>random</td>
+          <td>layout</td>
+          <td>dashboard</td>
+        </tr>
+        <tr>
+          <td>1,005</td>
+          <td>dashboard</td>
+          <td>irrelevant</td>
+          <td>text</td>
+          <td>placeholder</td>
+        </tr>
+        <tr>
+          <td>1,006</td>
+          <td>dashboard</td>
+          <td>illustrative</td>
+          <td>rich</td>
+          <td>data</td>
+        </tr>
+        <tr>
+          <td>1,007</td>
+          <td>placeholder</td>
+          <td>tabular</td>
+          <td>information</td>
+          <td>irrelevant</td>
+        </tr>
+        <tr>
+          <td>1,008</td>
+          <td>random</td>
+          <td>data</td>
+          <td>placeholder</td>
+          <td>text</td>
+        </tr>
+        <tr>
+          <td>1,009</td>
+          <td>placeholder</td>
+          <td>irrelevant</td>
+          <td>visual</td>
+          <td>layout</td>
+        </tr>
+        <tr>
+          <td>1,010</td>
+          <td>data</td>
+          <td>rich</td>
+          <td>dashboard</td>
+          <td>tabular</td>
+        </tr>
+        <tr>
+          <td>1,011</td>
+          <td>information</td>
+          <td>placeholder</td>
+          <td>illustrative</td>
+          <td>data</td>
+        </tr>
+        <tr>
+          <td>1,012</td>
+          <td>text</td>
+          <td>placeholder</td>
+          <td>layout</td>
+          <td>dashboard</td>
+        </tr>
+        <tr>
+          <td>1,013</td>
+          <td>dashboard</td>
+          <td>irrelevant</td>
+          <td>text</td>
+          <td>visual</td>
+        </tr>
+        <tr>
+          <td>1,014</td>
+          <td>dashboard</td>
+          <td>illustrative</td>
+          <td>rich</td>
+          <td>data</td>
+        </tr>
+        <tr>
+          <td>1,015</td>
+          <td>random</td>
+          <td>tabular</td>
+          <td>information</td>
+          <td>text</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
